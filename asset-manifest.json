@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/cocktailApp/static/css/main.353c5b1c.chunk.css",
-    "main.js": "/cocktailApp/static/js/main.6d40212f.chunk.js",
-    "main.js.map": "/cocktailApp/static/js/main.6d40212f.chunk.js.map",
-    "runtime-main.js": "/cocktailApp/static/js/runtime-main.afe33d4e.js",
-    "runtime-main.js.map": "/cocktailApp/static/js/runtime-main.afe33d4e.js.map",
-    "static/js/2.558d7e35.chunk.js": "/cocktailApp/static/js/2.558d7e35.chunk.js",
-    "static/js/2.558d7e35.chunk.js.map": "/cocktailApp/static/js/2.558d7e35.chunk.js.map",
-    "static/js/3.0bad3968.chunk.js": "/cocktailApp/static/js/3.0bad3968.chunk.js",
-    "static/js/3.0bad3968.chunk.js.map": "/cocktailApp/static/js/3.0bad3968.chunk.js.map",
-    "index.html": "/cocktailApp/index.html",
-    "static/css/main.353c5b1c.chunk.css.map": "/cocktailApp/static/css/main.353c5b1c.chunk.css.map",
-    "static/js/2.558d7e35.chunk.js.LICENSE.txt": "/cocktailApp/static/js/2.558d7e35.chunk.js.LICENSE.txt",
-    "static/media/martini.b038e297.png": "/cocktailApp/static/media/martini.b038e297.png"
+    "main.css": "/cocktailsApp/static/css/main.353c5b1c.chunk.css",
+    "main.js": "/cocktailsApp/static/js/main.6d40212f.chunk.js",
+    "main.js.map": "/cocktailsApp/static/js/main.6d40212f.chunk.js.map",
+    "runtime-main.js": "/cocktailsApp/static/js/runtime-main.fac53fb5.js",
+    "runtime-main.js.map": "/cocktailsApp/static/js/runtime-main.fac53fb5.js.map",
+    "static/js/2.558d7e35.chunk.js": "/cocktailsApp/static/js/2.558d7e35.chunk.js",
+    "static/js/2.558d7e35.chunk.js.map": "/cocktailsApp/static/js/2.558d7e35.chunk.js.map",
+    "static/js/3.0bad3968.chunk.js": "/cocktailsApp/static/js/3.0bad3968.chunk.js",
+    "static/js/3.0bad3968.chunk.js.map": "/cocktailsApp/static/js/3.0bad3968.chunk.js.map",
+    "index.html": "/cocktailsApp/index.html",
+    "static/css/main.353c5b1c.chunk.css.map": "/cocktailsApp/static/css/main.353c5b1c.chunk.css.map",
+    "static/js/2.558d7e35.chunk.js.LICENSE.txt": "/cocktailsApp/static/js/2.558d7e35.chunk.js.LICENSE.txt",
+    "static/media/martini.b038e297.png": "/cocktailsApp/static/media/martini.b038e297.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.afe33d4e.js",
+    "static/js/runtime-main.fac53fb5.js",
     "static/js/2.558d7e35.chunk.js",
     "static/css/main.353c5b1c.chunk.css",
     "static/js/main.6d40212f.chunk.js"
