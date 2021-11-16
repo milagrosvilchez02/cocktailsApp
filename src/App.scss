@@ -1,0 +1,17 @@
+@import '../src/styles/Header.scss';
+@import '../src/styles/Start.scss';
+@import '../src/styles/Option.scss';
+@import '../src/styles/Input.scss';
+@import '../src/styles/Button.scss';
+@import '../src/styles/LoadInfo.scss';
+@import '../src/styles/Alphabet.scss';
+
+body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  user-select: none; /* Standard */
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  background-color: #94a8cf;
+}
