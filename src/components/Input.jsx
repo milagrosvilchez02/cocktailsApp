@@ -23,28 +23,29 @@ const Input = ({ selected, onReturn, onSearch }) => {
   };
 
   return (
-    <div className="display-input">
-      <Option name={selected.name} />
-      <div className="input-container">
-        <input
-          className="input"
-          type="text"
-          placeholder="Type here..."
-          autoFocus
-          onChange={(e) => handleChange(e.currentTarget.value)}
-        />
-        <img
-          onClick={handleSearch}
-          className="searcher-icon"
-          src={search}
-          alt="enter"
-        />
+    <React.Fragment>
+      <div className="display-input">
+        <Option name={selected.name} />
+        <div className="input-container">
+          <input
+            className="input"
+            type="text"
+            placeholder="Type here..."
+            autoFocus
+            onChange={(e) => handleChange(e.currentTarget.value)}
+          />
+          <img
+            onClick={handleSearch}
+            className="searcher-icon"
+            src={search}
+            alt="enter"
+          />
+        </div>
+
+        <p className="hint">{selected.hint}</p>
       </div>
-
-      <p className="hint">{selected.hint}</p>
-
       <Button onClick={handleClick} text="BACK" />
-    </div>
+    </React.Fragment>
   );
 };
 

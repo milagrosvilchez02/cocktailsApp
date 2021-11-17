@@ -1,4 +1,5 @@
 .load-info {
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -54,6 +55,11 @@
 
 }
 
+.top {
+    display: flex;
+    flex-direction: column;
+}
+
 .basics {
     display: flex;
     justify-content: space-evenly;
@@ -98,11 +104,19 @@
     }
     
     .display-howto {
+        font-size: 1.5vw;
         margin: 0;
+        width: 90%;
+    }
+
+    .top {
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
     }
     
     .item {
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
         width: 90vw;
     }
@@ -111,16 +125,11 @@
         font-size: 1.5vw;
     }
 
-    .display-info {
-        display: flex;
-        width: 60%;
-        flex-direction: column;
-        font-size: 1.5vw;
-    }
-
     .basics {
+        align-items: center;
         margin-top: 20px;
-        justify-content: space-evenly;
         display: flex;
+        width: 50%;
+        font-size: 1.5vw;
     }
 }

@@ -49,22 +49,19 @@ const LoadInfo = ({ input, letter, selected, onReturn, onItemSelect }) => {
 
   return (
     <div className="load-info">
-      <Button onClick={handleClick} text="BACK" />
       {state.data && (
         <div className="all-items">
           {state.data.map((i) => (
             <div key={i.idDrink} className="item">
-              <div className="display-title">
-                <div className="title-section">
+              <div className="top">
+                <div className="display-title">
                   <h1>{i.strDrink}</h1>
+                  <img
+                    className="display-image"
+                    src={i.strDrinkThumb}
+                    alt="example"
+                  />
                 </div>
-                <img
-                  className="display-image"
-                  src={i.strDrinkThumb}
-                  alt="example"
-                />
-              </div>
-              <div className="display-info">
                 <div className="basics">
                   <div className="ingredients">
                     <h4>Ingredients</h4>
@@ -72,6 +69,7 @@ const LoadInfo = ({ input, letter, selected, onReturn, onItemSelect }) => {
                       <p>{ing}</p>
                     ))}
                   </div>
+
                   <div className="measures">
                     <h4>Measures</h4>
 
@@ -80,11 +78,11 @@ const LoadInfo = ({ input, letter, selected, onReturn, onItemSelect }) => {
                     ))}
                   </div>
                 </div>
+              </div>
 
-                <div className="display-howto">
-                  <h4>How to:</h4>
-                  <p>{i.strInstructions}</p>
-                </div>
+              <div className="display-howto">
+                <h4>How to:</h4>
+                <p>{i.strInstructions}</p>
               </div>
             </div>
           ))}
