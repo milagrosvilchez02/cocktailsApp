@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/cocktailsApp/static/css/main.524c1d46.chunk.css",
-    "main.js": "/cocktailsApp/static/js/main.d8447b07.chunk.js",
-    "main.js.map": "/cocktailsApp/static/js/main.d8447b07.chunk.js.map",
+    "main.css": "/cocktailsApp/static/css/main.1df2c15f.chunk.css",
+    "main.js": "/cocktailsApp/static/js/main.8cb3553a.chunk.js",
+    "main.js.map": "/cocktailsApp/static/js/main.8cb3553a.chunk.js.map",
     "runtime-main.js": "/cocktailsApp/static/js/runtime-main.fac53fb5.js",
     "runtime-main.js.map": "/cocktailsApp/static/js/runtime-main.fac53fb5.js.map",
     "static/js/2.558d7e35.chunk.js": "/cocktailsApp/static/js/2.558d7e35.chunk.js",
@@ -10,14 +10,13 @@
     "static/js/3.0bad3968.chunk.js": "/cocktailsApp/static/js/3.0bad3968.chunk.js",
     "static/js/3.0bad3968.chunk.js.map": "/cocktailsApp/static/js/3.0bad3968.chunk.js.map",
     "index.html": "/cocktailsApp/index.html",
-    "static/css/main.524c1d46.chunk.css.map": "/cocktailsApp/static/css/main.524c1d46.chunk.css.map",
-    "static/js/2.558d7e35.chunk.js.LICENSE.txt": "/cocktailsApp/static/js/2.558d7e35.chunk.js.LICENSE.txt",
-    "static/media/martini.b038e297.png": "/cocktailsApp/static/media/martini.b038e297.png"
+    "static/css/main.1df2c15f.chunk.css.map": "/cocktailsApp/static/css/main.1df2c15f.chunk.css.map",
+    "static/js/2.558d7e35.chunk.js.LICENSE.txt": "/cocktailsApp/static/js/2.558d7e35.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.fac53fb5.js",
     "static/js/2.558d7e35.chunk.js",
-    "static/css/main.524c1d46.chunk.css",
-    "static/js/main.d8447b07.chunk.js"
+    "static/css/main.1df2c15f.chunk.css",
+    "static/js/main.8cb3553a.chunk.js"
   ]
 }
