@@ -13,21 +13,23 @@ const Alphabet = ({ name, onReturn, onLetterSelect }) => {
   };
 
   return (
-    <div className="display-alphabet">
-      <Option name={name} />
-      <div className="alphabet-container">
-        {abc.map((letter) => (
-          <p
-            key={letter}
-            className="single-letter"
-            onClick={() => handleSelect(letter)}
-          >
-            {letter}
-          </p>
-        ))}
+    <React.Fragment>
+      <div className="display-alphabet">
+        <Option name={name} />
+        <div className="alphabet-container">
+          {abc.map((letter) => (
+            <p
+              key={letter}
+              className="single-letter"
+              onClick={() => handleSelect(letter)}
+            >
+              {letter}
+            </p>
+          ))}
+        </div>
       </div>
       <Button onClick={handleClick} text="BACK" />
-    </div>
+    </React.Fragment>
   );
 };
 

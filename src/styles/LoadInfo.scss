@@ -1,5 +1,4 @@
 .load-info {
-    margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -10,9 +9,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .display-title {
+    padding-top: 10px;
     font-size: 4vw;
     display: flex;
     width: 95%;
@@ -28,7 +29,7 @@
 .item {
     display: flex;
     flex-direction: column;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     background-color: rgba(255, 255, 255, 0.1);
     align-items: center;
     border: 1px solid #000000;
@@ -41,13 +42,22 @@
 
 .display-howto {
     display: flex;
-    font-size: 5vw;
 
     flex-direction: column;
     margin: 0px 10px 10px 10px;
     h2 {
         margin: 0;
     }
+}
+.display-info {
+    font-size: 5vw;
+
+}
+
+.basics {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
 }
 
 .list {
@@ -82,22 +92,35 @@
         margin: 20px;
     }
     .display-title {
+        width: 40%;
         font-size: 1vw;
         flex-direction: column;
     }
-
+    
     .display-howto {
-        width: 180vw;
-        font-size: 1.5vw;
+        margin: 0;
     }
     
     .item {
         flex-direction: row;
-        font-size: 20px;
+        justify-content: space-between;
         width: 90vw;
     }
 
     .list{
         font-size: 1.5vw;
+    }
+
+    .display-info {
+        display: flex;
+        width: 60%;
+        flex-direction: column;
+        font-size: 1.5vw;
+    }
+
+    .basics {
+        margin-top: 20px;
+        justify-content: space-evenly;
+        display: flex;
     }
 }

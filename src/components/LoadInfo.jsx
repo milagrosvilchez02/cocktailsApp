@@ -17,7 +17,6 @@ const LoadInfo = ({ input, letter, selected, onReturn, onItemSelect }) => {
   const getList = async () => {
     const data = await fetch(selected.url + letter);
     const res = await data.json();
-    console.log(res["drinks"]);
     setState({ list: res["drinks"], data: null });
   };
 
@@ -27,6 +26,25 @@ const LoadInfo = ({ input, letter, selected, onReturn, onItemSelect }) => {
 
   const handleItemSelect = (input) => {
     onItemSelect(input.toLowerCase());
+  };
+
+  const getIngredients = (item) => {
+    let number = 1;
+    let ingredients = [];
+    while (item["strIngredient" + number]) {
+      ingredients.push(item["strIngredient" + number]);
+      number++;
+    }
+    return ingredients;
+  };
+  const getMeasures = (item) => {
+    let number = 1;
+    let measures = [];
+    while (item["strMeasure" + number]) {
+      measures.push(item["strMeasure" + number]);
+      number++;
+    }
+    return measures;
   };
 
   return (
@@ -46,10 +64,27 @@ const LoadInfo = ({ input, letter, selected, onReturn, onItemSelect }) => {
                   alt="example"
                 />
               </div>
-              {/* <div className="ingredients">{getIngredients(i)}</div> */}
-              <div className="display-howto">
-                <h4>How to:</h4>
-                <p>{i.strInstructions}</p>
+              <div className="display-info">
+                <div className="basics">
+                  <div className="ingredients">
+                    <h4>Ingredients</h4>
+                    {getIngredients(i).map((ing) => (
+                      <p>{ing}</p>
+                    ))}
+                  </div>
+                  <div className="measures">
+                    <h4>Measures</h4>
+
+                    {getMeasures(i).map((qua) => (
+                      <p>{qua}</p>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="display-howto">
+                  <h4>How to:</h4>
+                  <p>{i.strInstructions}</p>
+                </div>
               </div>
             </div>
           ))}

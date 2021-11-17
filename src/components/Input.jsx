@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Option from "./Option";
 import Button from "./Button";
+import search from "../resources/iconsearch.png";
 
 const Input = ({ selected, onReturn, onSearch }) => {
   const [state, setState] = useState({ searchQuery: "" });
@@ -35,7 +36,7 @@ const Input = ({ selected, onReturn, onSearch }) => {
         <img
           onClick={handleSearch}
           className="searcher-icon"
-          src="https://cdn-icons.flaticon.com/png/512/3031/premium/3031293.png?token=exp=1636058443~hmac=c86749f275cfc2f937c8ee82ef07af90"
+          src={search}
           alt="enter"
         />
       </div>
