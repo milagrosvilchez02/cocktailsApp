@@ -1,49 +1,52 @@
+@import './variables/Variables.scss';
+
 .load-info {
-    margin-top: 10px;
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
+    margin-top: 10px;
 }
 
 .all-items {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 100%;
 }
 
 .display-title {
-    padding-top: 10px;
-    font-size: 4vw;
-    display: flex;
-    width: 95%;
     align-items: center;
-    justify-content: space-around;
+    display: flex;
+    font-size: 4vw;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    width: 95%;
+    h1 {
+        text-align: center;
+    }
 }
 
 .display-image {
-    width: 45vw;
     border-radius: 5px;
+    width: 45vw;
 }
 
 .item {
+    @include container;
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
-    align-items: center;
-    border: 1px solid #000000;
-    border-radius: 10px;
     width: 98%;
+
     h4 {
         margin: 0;
     }
 }
 
 .display-howto {
-    display: flex;
 
+    display: flex;
     flex-direction: column;
     margin: 0px 10px 10px 10px;
     h2 {
@@ -67,40 +70,37 @@
 }
 
 .list {
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
-    border-radius: 5px;
+    font-size: 4vw;
     margin: 5px;
     width: 95vw;
-    font-size: 4vw;
-    border: 1px solid black;
-    background-color: rgba(255, 255, 255, 0);
     p{
-        border-radius: 5px;
-        background-color: rgba(255, 255, 255, 0.1);
+        @include container;
+        margin: 10px 0px 10px 10px;
         padding: 10px;
         width: fit-content;
-        margin: 10px 0px 10px 10px;
     }
 }
 
 @media screen and (min-width: 700px) {
     .all-items {
+        align-items: flex-start;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        align-items: flex-start;
         justify-content: center;
     }
     
     .display-image {
-        width: 20vw;
         margin: 20px;
+        width: 20vw;
     }
     .display-title {
-        width: 40%;
-        font-size: 1vw;
         flex-direction: column;
+        font-size: 1vw;
+        width: 40%;
     }
     
     .display-howto {
@@ -127,9 +127,9 @@
 
     .basics {
         align-items: center;
-        margin-top: 20px;
         display: flex;
-        width: 50%;
         font-size: 1.5vw;
+        margin-top: 20px;
+        width: 50%;
     }
 }

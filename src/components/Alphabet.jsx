@@ -15,7 +15,6 @@ const Alphabet = ({ name, onReturn, onLetterSelect }) => {
   return (
     <React.Fragment>
       <div className="display-alphabet">
-        <Option name={name} />
         <div className="alphabet-container">
           {abc.map((letter) => (
             <p
@@ -28,7 +27,6 @@ const Alphabet = ({ name, onReturn, onLetterSelect }) => {
           ))}
         </div>
       </div>
-      <Button onClick={handleClick} text="BACK" />
     </React.Fragment>
   );
 };

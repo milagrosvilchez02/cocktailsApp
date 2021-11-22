@@ -5,6 +5,7 @@
 @import '../src/styles/Button.scss';
 @import '../src/styles/LoadInfo.scss';
 @import '../src/styles/Alphabet.scss';
+@import '../src/styles/NavBar.scss';
 
 body {
   margin: 0;
@@ -14,4 +15,10 @@ body {
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE10+/Edge */
   background-color: #94a8cf;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }

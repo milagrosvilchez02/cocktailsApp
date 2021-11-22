@@ -25,7 +25,6 @@ const Input = ({ selected, onReturn, onSearch }) => {
   return (
     <React.Fragment>
       <div className="display-input">
-        <Option name={selected.name} />
         <div className="input-container">
           <input
             className="input"
@@ -44,7 +43,6 @@ const Input = ({ selected, onReturn, onSearch }) => {
 
         <p className="hint">{selected.hint}</p>
       </div>
-      <Button onClick={handleClick} text="BACK" />
     </React.Fragment>
   );
 };

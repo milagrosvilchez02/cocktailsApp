@@ -97,7 +97,6 @@ const LoadInfo = ({ input, letter, selected, onReturn, onItemSelect }) => {
           ))}
         </div>
       )}
-      <Button onClick={handleClick} text="BACK" />
     </div>
   );
 };

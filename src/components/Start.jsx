@@ -1,5 +1,4 @@
 import React from "react";
-import Header from "./Header";
 import Option from "./Option";
 import options from "../resources/options";
 
@@ -10,7 +9,6 @@ const Start = ({ onSelect }) => {
 
   return (
     <React.Fragment>
-      <Header />
       <div className="main">
         <p className="text">Search by:</p>
         <div className="options">

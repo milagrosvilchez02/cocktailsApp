@@ -5,6 +5,7 @@ import Input from "./components/Input";
 import Start from "./components/Start";
 import Alphabet from "./components/Alphabet";
 import LoadInfo from "./components/LoadInfo";
+import NavBar from "./components/NavBar";
 
 function App() {
   const [state, setState] = useState({
@@ -32,6 +33,7 @@ function App() {
 
   return (
     <div className="App">
+      <NavBar state={state} onReturn={handleSelect} />
       {!state.isSelected && !state.input && <Start onSelect={handleSelect} />}
       {state.isSelected && state.isSelected.name === "NAME" && !state.input && (
         <Input

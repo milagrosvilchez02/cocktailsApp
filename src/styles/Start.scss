@@ -1,6 +1,6 @@
 .main {
-    margin-top: 2.5rem;
     font-size: 6vw;
+    margin-top: 2.5rem;
     p {
         display: flex;
         justify-content: center;
@@ -9,18 +9,18 @@
 }
 
 .options {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 @media screen and (min-width: 700px) {
     .main {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        height: 70vh;
         font-size: 4vh;
+        height: 70vh;
+        justify-content: center;
         margin: 0rem 4rem 0rem 4rem;
         p {
             justify-content: flex-start;
@@ -28,7 +28,7 @@
         }
     }
     .options {
-        justify-content: space-evenly;
         flex-direction: row;
+        justify-content: space-evenly;
     }
 }
